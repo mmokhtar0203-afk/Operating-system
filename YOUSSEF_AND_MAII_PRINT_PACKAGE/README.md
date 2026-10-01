@@ -19,7 +19,7 @@ Vector print-production reconstruction of the existing **Youssef & Maii** engage
 | `07_PREVIEWS/` | **MOCKUPS ONLY, not print artwork** |
 | `08_SOURCE_BUILD/` | Component vector data + scripts to regenerate everything at supplier-confirmed sizes |
 | `09_FINAL_DELIVERY/` | V1 client/printer-ready PDFs and PNGs + README.pdf |
-| `10_IDENTITY_V2_NATURAL_FLOWER/` | **V2 application system**: ivory paper, champagne/gold print, optional tonal ivory botanical pattern, and one physical white flower with natural green stem and leaves. Invitation V2, cups (monogram only), stickers, flower tag, flower wrapping, thank-you card, envelope, napkin and favour box, plus mockups and `Identity_V2_Guide.pdf`. Logo, monogram, botanicals and typography unchanged |
+| `10_IDENTITY_V2_NATURAL_FLOWER/` | **V2 application system**: ivory paper, champagne/gold print, optional tonal ivory botanical pattern, and one physical natural green stem with leaves (no flower head). Invitation V2, cups (monogram only), stickers, flower tag, flower wrapping, thank-you card, envelope, napkin and favour box, plus mockups and `Identity_V2_Guide.pdf`. Logo, monogram, botanicals and typography unchanged |
 
 ## Which file goes to the printer
 * **Foil job:** `*_FOIL_GOLD.pdf`. Page 1 is the combined file (CMYK background layer + `FOIL_GOLD` spot layer, overprint). Page 2 is the foil elements only, for die making.
