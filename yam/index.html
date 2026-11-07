@@ -33,10 +33,11 @@
       var t = document.getElementById('boot-text');
       if (!t) return;
       if (location.protocol === 'file:') {
-        t.innerHTML = 'YAM must be served by a local web server.<br><br>' +
-          'Open a terminal in the <b>yam</b> folder and run:<br>' +
-          '<code>python3 -m http.server 8080</code><br>then open <code>http://localhost:8080</code>' +
-          '<br><br>(or double-click <b>start.command</b> / <b>start.bat</b>)';
+        t.innerHTML = 'YAM must be started with its local server, not opened directly.<br><br>' +
+          '<b>Windows:</b> close this tab and double-click <b>start.bat</b> in the yam folder.<br>' +
+          '<b>macOS:</b> double-click <b>start.command</b>.<br>' +
+          '<b>Linux:</b> run <code>./start.sh</code>.<br><br>' +
+          'Then use the browser tab that opens (http://localhost:8080).';
       } else {
         t.textContent = 'Still loading… If this persists, check the browser console for errors.';
       }

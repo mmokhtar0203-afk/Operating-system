@@ -4,18 +4,30 @@ A documentation-first application for YAM's internal team. It centralises every 
 
 Plain **HTML5 + CSS3 + vanilla JavaScript (ES modules)**. No framework, no backend. Records live in LocalStorage and files in IndexedDB.
 
+## Get the code
+
+Repository **mmokhtar0203-afk/Operating-system**, branch **`claude/jolly-newton-kr3bqg`**, folder **`yam/`**.
+
+- **Without git:** open https://github.com/mmokhtar0203-afk/Operating-system/tree/claude/jolly-newton-kr3bqg, then **Code → Download ZIP**, and extract it. The app is in `Operating-system-claude-jolly-newton-kr3bqg\yam`.
+- **With git:**
+  ```
+  git clone -b claude/jolly-newton-kr3bqg https://github.com/mmokhtar0203-afk/Operating-system.git
+  ```
+
 ## Run it
 
-ES modules can't load from `file://`, so serve the folder with any static server:
+**Windows:** open the `yam` folder and double-click **`start.bat`**. A console window opens and your browser opens at http://localhost:8080. Keep that console window open while you use YAM; close it to stop.
+- If Python is installed (`py` or `python`), it uses `serve.py`.
+- Without Python, it uses `serve.ps1`, a small server built on Windows PowerShell. No installation is needed.
+- If Windows SmartScreen warns about the file, choose **More info → Run anyway**.
 
-```bash
-cd yam
-python3 -m http.server 8080
-```
+**macOS:** double-click `start.command` (first time: right-click → Open). **Linux:** `./start.sh`.
 
-Then open <http://localhost:8080>. You can also double-click `start.command` (macOS), run `./start.sh` (Linux/macOS) or `start.bat` (Windows). If someone opens `index.html` directly, the app shows these instructions.
+**Any OS, manually:** `python serve.py` from inside `yam/`.
 
-On first launch, the app creates demonstration data: **ZED EAST** (villa, Dr. Ahmed Mokhtar), **WESAL RESIDENCE** (apartment) and **ALLEGRIA SUITE** (interior project), plus a 44-item library with generated material swatches and product drawings.
+Do not open `index.html` by double-clicking: browsers block the app's JavaScript modules on `file://`, and the page then explains how to start it properly. Use Chrome, Edge, Safari or Firefox (current versions). The app runs entirely offline; only the web fonts need internet, and it falls back to system fonts without it.
+
+On first launch, the app creates demonstration data: **ZED EAST** (villa, Dr. Ahmed Mokhtar), **WESAL RESIDENCE** (apartment) and **ALLEGRIA SUITE** (interior project), plus a 44-item library with generated material swatches and product drawings. Your data is stored in that browser on that computer. Use **Settings → Export full backup** to move it elsewhere.
 
 ## Architecture
 
