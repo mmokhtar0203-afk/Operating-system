@@ -1,0 +1,4 @@
+fixtures/*
+!fixtures/ref.png
+!fixtures/drawing.png
+!fixtures/datasheet.pdf
